@@ -65,10 +65,9 @@ export default function ContactSection() {
       <section id="contact" className="py-20 bg-slate-50">
         <div className="max-w-7xl container">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-primary">Get in Touch</h2>
+            <h2 className="text-4xl font-bold mb-6 text-primary">Ready to Transform Your Business?</h2>
             <p className="text-lg mb-8 text-secondary">
-              Ready to start your AI transformation journey? Fill out our quick application form below.
-            </p>
+            Contact us today to discuss your specific needs and learn how CleverTask can help your business thrive.            </p>
           </div>
 
           {/* Three Column Layout with Larger Center */}

@@ -15,9 +15,9 @@ export default function Header() {
           </nav>
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            <button className="btn-header">
+            <a href="#contact" className="btn-header">
               Get Started
-            </button>
+            </a>
           </div>
         </div>
       </div>

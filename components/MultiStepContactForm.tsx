@@ -318,33 +318,8 @@ export default function MultiStepContactForm({ onSubmit, isSubmitting = false, h
 
   return (
     <div className="max-w-2xl mx-auto">
-      {/* Progress Dots */}
-      <div className="flex gap-8 justify-center items-center mb-8">
-        {formSteps.map((step, index) => (
-          <div key={step.id} className="flex items-center">
-            <button
-              onClick={() => goToStep(step.id)}
-              className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-semibold transition-all duration-200 ${
-                step.id === currentStep
-                  ? 'bg-primary-light-blue text-brand-dark-text'
-                  : step.id < currentStep
-                  ? 'bg-accent-teal text-brand-dark-text cursor-pointer'
-                  : 'bg-background-secondary text-text-secondary cursor-not-allowed'
-              }`}
-              disabled={step.id > currentStep}
-            >
-              {step.id < currentStep ? <Check className="w-5 h-5" /> : step.id}
-            </button>
-            {index < formSteps.length - 1 && (
-              <div
-                className={`w-12 h-1 mx-2 transition-all duration-200 ${
-                  step.id < currentStep ? 'bg-accent-teal' : 'bg-border-color'
-                }`}
-              />
-            )}
-          </div>
-        ))}
-      </div>
+
+   
 
       {/* Step Header */}
       <div className="text-center mb-8">
