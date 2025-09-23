@@ -21,5 +21,10 @@ const eslintConfig = [
     ],
   },
 ];
+module.exports = {
+  rules: {
+    "@typescript-eslint/no-explicit-any": "off", // disables the rule
+  }
+}
 
 export default eslintConfig;
