@@ -70,64 +70,63 @@ export default function ContactSection() {
             Contact us today to discuss your specific needs and learn how CleverTask can help your business thrive.            </p>
           </div>
 
-          {/* Three Column Layout with Larger Center */}
+          {/* Two Column Layout: Left Info (30%) + Right Form (70%) */}
           <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-12 gap-6 lg:gap-8">
-              {/* Contact Information - Left Side (Compact) */}
-              <div className="lg:col-span-3">
+            <div className="grid lg:grid-cols-10 gap-8 lg:gap-12">
+              {/* Left Side - Contact Info + What Happens Next (30%) */}
+              <div className="lg:col-span-3 space-y-8 ">
+                {/* Contact Information */}
                 <div className="contact-form">
-                  <h3 className="text-lg font-semibold mb-4 text-primary">Contact Information</h3>
-                  <div className="space-y-3">
+                  <h3 className="text-xl font-semibold mb-6 text-primary">Contact Information</h3>
+                  <div className="space-y-4">
                     <div className="flex items-center">
-                      <Mail className="contact-icon w-4 h-4" />
-                      <span className="text-secondary text-sm">hello@clevertask.com</span>
+                      <Mail className="contact-icon w-5 h-5" />
+                      <span className="text-secondary">hello@clevertask.com</span>
                     </div>
                     <div className="flex items-center">
-                      <Phone className="contact-icon w-4 h-4" />
-                      <span className="text-secondary text-sm">+1 (555) 123-4567</span>
+                      <Phone className="contact-icon w-5 h-5" />
+                      <span className="text-secondary">+1 (555) 123-4567</span>
                     </div>
                     <div className="flex items-center">
-                      <MapPin className="contact-icon w-4 h-4" />
-                      <span className="text-secondary text-sm">Alexandria, Egypt</span>
+                      <MapPin className="contact-icon w-5 h-5" />
+                      <span className="text-secondary">Alexandria, Egypt</span>
                     </div>
                   </div>
                 </div>
+
+                {/* What Happens Next */}
+                <div className="contact-form">
+                  <h4 className="text-xl font-semibold text-primary mb-6">What happens next?</h4>
+                  <ul className="text-base text-secondary space-y-3">
+                    <li className="flex items-start">
+                      <span className="text-primary-light-blue mr-3">•</span>
+                      <span>Review within 24 hours</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary-light-blue mr-3">•</span>
+                      <span>Free consultation call</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary-light-blue mr-3">•</span>
+                      <span>Discuss your needs</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary-light-blue mr-3">•</span>
+                      <span>Custom proposal</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              {/* Multi-Step Form - Center (Larger) */}
-              <div className="lg:col-span-6">
-                <div className="w-full max-w-3xl mx-auto">
+              {/* Right Side - Multi-Step Form (70%) */}
+              <div className="lg:col-span-7">
+                <div className="w-full">
                   <MultiStepContactForm 
                     key={formKey}
                     onSubmit={handleFormSubmit} 
                     isSubmitting={isSubmitting}
                     hasSubmitted={hasSubmitted}
                   />
-                </div>
-              </div>
-
-              {/* What Happens Next - Right Side (Compact) */}
-              <div className="lg:col-span-3">
-                <div className="contact-form">
-                  <h4 className="text-lg font-semibold text-primary mb-4">What happens next?</h4>
-                  <ul className="text-sm text-secondary space-y-2">
-                    <li className="flex items-start">
-                      <span className="text-primary-light-blue mr-2 text-xs">•</span>
-                      <span>Review within 24 hours</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary-light-blue mr-2 text-xs">•</span>
-                      <span>Free consultation call</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary-light-blue mr-2 text-xs">•</span>
-                      <span>Discuss your needs</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary-light-blue mr-2 text-xs">•</span>
-                      <span>Custom proposal</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>

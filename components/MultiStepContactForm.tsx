@@ -322,18 +322,12 @@ export default function MultiStepContactForm({ onSubmit, isSubmitting = false, h
    
 
       {/* Step Header */}
-      <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold text-primary mb-2">
-          Step {currentStep}: {formSteps[currentStep - 1]?.title}
-        </h2>
-        <p className="text-secondary">
-          {formSteps[currentStep - 1]?.description}
-        </p>
-      </div>
+ 
 
       {/* Form Content */}
       <form onSubmit={handleSubmit} className="contact-form">
         {renderStepContent()}
+        
 
         {/* Navigation Buttons */}
         <div className="flex justify-between items-center mt-8 pt-6 border-t border-border-color">
@@ -350,7 +344,14 @@ export default function MultiStepContactForm({ onSubmit, isSubmitting = false, h
             <ChevronLeft className="w-4 h-4" />
             <span>Previous</span>
           </button>
-
+          <div className="text-center mb-8">
+        <h2 className="text-2xl font-bold text-primary mb-2">
+          Step {currentStep}: {formSteps[currentStep - 1]?.title}
+        </h2>
+        <p className="text-secondary">
+          {formSteps[currentStep - 1]?.description}
+        </p>
+      </div>
           {currentStep < formSteps.length ? (
             <button
               type="button"
