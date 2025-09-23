@@ -16,10 +16,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-primary">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="footer-link">About</a></li>
+              <li><a href="#" className="footer-link">About Us</a></li>
               <li><a href="#" className="footer-link">Services</a></li>
               <li><a href="#" className="footer-link">Careers</a></li>
               <li><a href="#" className="footer-link">Blog</a></li>
+              <li><a href="#" className="footer-link">Contact Us</a></li>
             </ul>
           </div>
           <div>
@@ -42,7 +43,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-copyright">
-          <p>&copy; 2024 CleverTask. All rights reserved.</p>
+          <p>&copy; 2025 CleverTask. All rights reserved.</p>
         </div>
       </div>
     </footer>

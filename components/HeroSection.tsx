@@ -16,12 +16,17 @@ export default function HeroSection() {
             CleverTask delivers cutting-edge solutions that boost efficiency and drive growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary">
+            <a href="#contact" className="btn-primary">
               Get Started <ArrowRight className="ml-2 h-5" />
-            </button>
-            <button className="btn-secondary">
-              Watch Demo
-            </button>
+            </a>
+            <a 
+              href="https://calendly.com/catherinesamy/new-meeting?month=2025-09" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-secondary"
+            >
+              Book a call
+            </a>
           </div>
         </div>
       </div>
