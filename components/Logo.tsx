@@ -8,7 +8,7 @@ export default function Logo({ size = 'lg', showText = true }: LogoProps) {
   const dimensions = {
     sm: { width: 32, height: 32, text: 'text-lg' },
     md: { width: 40, height: 40, text: 'text-2xl' },
-    lg: { width: 60, height: 60, text: 'text-3xl' }
+    lg: { width: 50, height: 50, text: 'text-3xl' }
   };
 
   const { width, height, text } = dimensions[size];
