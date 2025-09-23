@@ -40,11 +40,7 @@ export default function ContactSection() {
     }
   }
 
-  const handleNewSubmission = () => {
-    // Reset for a new submission (if needed)
-    setHasSubmitted(false)
-    setFormKey(prev => prev + 1)
-  }
+
 
   const handleBookConsultation = () => {
     // Open Calendly in new tab
